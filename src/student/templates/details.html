@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}
+Details
+{% endblock %}
+
+{% block body %}
+<h1>Details</h1>
+{% for instance in object_list %}
+<ul>
+	<li>ID:	{{instance.id}}</li>
+  	<li>REG_NO:	{{instance.reg_no}}</li>
+	<li>DEPT:	{{instance.dept}}</li>
+	<li>SEM:	{{instance.semester}}</li>
+	<li>WALLET:	{{instance.wallet}}</li>
+</ul>
+{% endfor %}
+{% endblock %}
